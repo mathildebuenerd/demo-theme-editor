@@ -3,6 +3,8 @@ import Input from "../../components/Input/Input";
 import "./Editor.css";
 
 export default function Editor() {
+  const iframeSrc = "http://localhost:3001/theme-editor";
+
   return (
     <div className="editor">
       <section>
@@ -15,7 +17,7 @@ export default function Editor() {
       <section>
         <iframe
           title="Preview"
-          src="http://localhost:8080/"
+          src={iframeSrc}
           width="700"
           height="600"
         ></iframe>
